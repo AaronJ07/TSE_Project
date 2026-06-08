@@ -1,0 +1,129 @@
+:root {
+    --mmu-red: #b5121b;
+    --mmu-dark: #1e293b;
+    --mmu-soft: #f5f7fb;
+    --mmu-border: #d9e0ea;
+}
+
+body {
+    min-height: 100vh;
+    background: var(--mmu-soft);
+    color: #243041;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.auth-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 16px;
+    background:
+        linear-gradient(135deg, rgba(181, 18, 27, 0.92), rgba(30, 41, 59, 0.9)),
+        url("https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1600&q=80") center/cover;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 460px;
+    border: 0;
+    border-radius: 8px;
+    box-shadow: 0 22px 60px rgba(15, 23, 42, 0.22);
+}
+
+.brand-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--mmu-red);
+    font-weight: 700;
+}
+
+.brand-dot {
+    width: 12px;
+    height: 12px;
+    background: var(--mmu-red);
+    border-radius: 50%;
+}
+
+.navbar {
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+}
+
+.navbar-brand {
+    font-weight: 700;
+}
+
+.page-shell {
+    padding: 32px 0;
+}
+
+.section-title {
+    color: var(--mmu-dark);
+    font-weight: 700;
+}
+
+.card {
+    border: 1px solid var(--mmu-border);
+    border-radius: 8px;
+}
+
+.stat-card {
+    border-left: 5px solid var(--mmu-red);
+}
+
+.table {
+    vertical-align: middle;
+}
+
+.btn-primary {
+    background: var(--mmu-red);
+    border-color: var(--mmu-red);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background: #8f0e15;
+    border-color: #8f0e15;
+}
+
+.btn-outline-primary {
+    color: var(--mmu-red);
+    border-color: var(--mmu-red);
+}
+
+.btn-outline-primary:hover {
+    background: var(--mmu-red);
+    border-color: var(--mmu-red);
+}
+
+.badge-pending {
+    background: #fff3cd;
+    color: #7a5a00;
+}
+
+.badge-approved {
+    background: #d1e7dd;
+    color: #0f5132;
+}
+
+.badge-rejected {
+    background: #f8d7da;
+    color: #842029;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--mmu-red);
+    box-shadow: 0 0 0 0.2rem rgba(181, 18, 27, 0.16);
+}
+
+@media (max-width: 576px) {
+    .page-shell {
+        padding: 20px 0;
+    }
+
+    .auth-card {
+        max-width: 100%;
+    }
+}

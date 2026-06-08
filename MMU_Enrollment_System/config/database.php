@@ -19,8 +19,9 @@ try {
             PDO::ATTR_EMULATE_PREPARES => false,
         ]
     );
-} catch (PDOException $e) {
-    die('Database connection failed. Please check config/database.php and import database.sql.');
+
+}catch (PDOException $e) {
+    die($e->getMessage());
 }
 
 function e($value)
